@@ -1,0 +1,76 @@
+.container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 0.1fr);
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.card img {
+  width: 350px;
+  height: auto;
+  border-radius: 28px;
+  padding: 0.7rem 1.1rem;
+  object-fit: cover;
+  cursor: pointer;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid rgb(173, 170, 170);
+  border-radius: 30px;
+  background-color: white;
+  padding: 16px 32px;
+  position: absolute;
+  left: 50%;
+  bottom: 105px;
+  transform: translateX(-50%);
+  z-index: 10;
+  cursor: pointer;
+
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+.btn span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: hsl(14, 86%, 42%);
+  margin-right: 10px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 1.1rem;
+}
+.content h4 {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(212, 198, 198);
+  padding: 0.3rem 0;
+}
+.content h2 {
+  font-size: 16px;
+  font-weight: bolder;
+  padding: 0.3rem 0;
+}
+.content p {
+  font-size: 16px;
+  font-weight: 500;
+  color: hsl(14, 86%, 42%);
+  padding: 0.3rem 0;
+}
