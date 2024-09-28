@@ -1,6 +1,9 @@
 section {
   display: flex;
 }
+.heading {
+  display: flex;
+}
 .heading h1 {
   font-size: 2.5rem;
   font-weight: 800;
@@ -32,4 +35,93 @@ section {
   font-size: 16px;
   font-weight: 400;
   color: hsl(14, 86%, 42%);
+}
+
+/* This CSS will when a user add an item in a cart */
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  height: auto;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #ffffff;
+}
+.cart-items h1 {
+  font-size: 30px;
+  font-weight: 900;
+  color: hsl(14, 86%, 42%);
+  margin: 10px 15px;
+}
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  height: 50px;
+  margin: 10px 15px;
+}
+.cart-item h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.cart-item button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.cart-item button svg {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+.quantities {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 0 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.quantities .quan1 {
+  color: hsl(14, 86%, 42%);
+}
+.quantities .quan2 {
+  color: rgb(189, 189, 189);
+}
+.quantities .quan3 {
+  color: rgb(155, 155, 155);
+}
+
+.order-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  margin: 50px 15px 0 15px;
+}
+.order-total h3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.order-total span {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.confirm-btn {
+  font-size: 20px;
+  font-weight: 500;
+  width: 350px;
+  height: 50px;
+  margin-top: 30px;
+  border-radius: 50px;
+  background-color: hsl(14, 86%, 42%);
+  color: #ffffff;
+  align-self: center;
+  cursor: pointer;
+}
+
+.cart-items a {
+  align-self: center;
 }
